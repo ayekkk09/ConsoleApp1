@@ -111,7 +111,7 @@ class Program
         Console.Write("Masukkan gaji pokok: ");
         double gajiPokok;
         while (!double.TryParse(Console.ReadLine(), out gajiPokok))
-        //menggunakan TryParse agar saat inputan salah akan diulang sampai benar dan mencegah terjadinya error
+        //menggunakan while agar saat inputan salah akan diulang sampai benar dan mencegah terjadinya error
         {
             Console.Write("Input tidak valid. Masukkan angka untuk gaji pokok: ");
         }
